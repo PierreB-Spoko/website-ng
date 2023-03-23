@@ -217,7 +217,8 @@
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData)),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': '*/*'
             }
         })
         document.getElementById("contactFormFieldset").disabled = true;
