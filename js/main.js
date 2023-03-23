@@ -213,7 +213,7 @@
         event.preventDefault();
         let formElement = document.forms.contactForm;
         let formData = new FormData(formElement);
-        const response = await fetch('https://spoko.tech/contact', {
+        const response = await fetch('https://api.spoko.tech/public/contact', {
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData)),
             headers: {
